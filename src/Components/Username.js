@@ -1,7 +1,7 @@
-import React, { useContext, useEffect } from "react";
-import ThemeChanger, { themeStyle } from "./Context/Context";
+import React, { useContext } from "react";
+import ThemeChanger from "./Context/Context";
 function Username() {
-  const { toggleTheme, setToggleTheme, queryResult } = useContext(ThemeChanger);
+  const { queryResult } = useContext(ThemeChanger);
   return (
     <div className="username">
       <h2>{queryResult.name ?? "The Octocat"}</h2>

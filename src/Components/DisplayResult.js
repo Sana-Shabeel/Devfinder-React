@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ThemeChanger, { themeStyle } from "./Context/Context";
+import ThemeChanger from "./Context/Context";
 import Following from "./DisplayFollowing";
 import Username from "./Username";
 import Avatar from "./Avatar";
@@ -8,7 +8,7 @@ import Bio from "./Bio";
 import Date from "./Date";
 import "./DisplayResults.css";
 function DisplayResult() {
-  const { toggleTheme, setToggleTheme } = useContext(ThemeChanger);
+  const { toggleTheme } = useContext(ThemeChanger);
 
   return (
     <div

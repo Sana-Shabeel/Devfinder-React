@@ -1,11 +1,10 @@
 import React, { useContext, useState } from "react";
-import ThemeChanger, { themeStyle } from "./Context/Context";
+import ThemeChanger from "./Context/Context";
 import { BsSearch } from "react-icons/bs";
 import "./SearchBar.css";
 
 function SearchBar() {
-  const { toggleTheme, setToggleTheme, setQuery, setQueryHandler } =
-    useContext(ThemeChanger);
+  const { toggleTheme, setQueryHandler } = useContext(ThemeChanger);
   const [inputValue, setInputValue] = useState("");
   const inputChangeHandler = (e) => {
     setInputValue(e.target.value);

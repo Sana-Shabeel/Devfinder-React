@@ -1,11 +1,11 @@
-import React, { useContext, useEffect } from "react";
-import ThemeChanger, { themeStyle } from "./Context/Context";
+import React, { useContext } from "react";
+import ThemeChanger from "./Context/Context";
 import { MdLocationOn } from "react-icons/md";
-import { BiFontSize, BiLink } from "react-icons/bi";
+import { BiLink } from "react-icons/bi";
 import { BsTwitter, BsBuilding } from "react-icons/bs";
 
 function Footer() {
-  const { toggleTheme, setToggleTheme, queryResult } = useContext(ThemeChanger);
+  const { toggleTheme, queryResult } = useContext(ThemeChanger);
 
   const grayishColor = { color: toggleTheme.contentColor };
   const iconBlue = { color: toggleTheme.iconsBlue };
@@ -23,7 +23,7 @@ function Footer() {
       </div>
       <div>
         <BiLink style={iconBlue} className="icon" />
-        <a href={queryResult.blog} target="_blank" style={grayishColor}>
+        <a href={queryResult.blog} style={grayishColor}>
           https://github.blog
         </a>
       </div>
