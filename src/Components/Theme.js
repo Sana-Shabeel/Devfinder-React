@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+import { BsFillSunFill } from "react-icons/bs";
 import "./HeaderStyles.css";
 import ThemeChanger, { themeStyle } from "./Context/Context";
 

@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import ThemeChanger, { themeStyle } from "./Context/Context";
+import ThemeChanger from "./Context/Context";
 import Moment from "react-moment";
 import "moment-timezone";
 
 function Date() {
-  const { toggleTheme, setToggleTheme, queryResult } = useContext(ThemeChanger);
+  const { queryResult } = useContext(ThemeChanger);
 
   const created = queryResult.created_at;
   return (

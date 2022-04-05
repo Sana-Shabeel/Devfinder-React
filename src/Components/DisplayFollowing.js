@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import ThemeChanger, { themeStyle } from "./Context/Context";
+import ThemeChanger from "./Context/Context";
 
 function Following() {
-  const { toggleTheme, setToggleTheme, queryResult } = useContext(ThemeChanger);
+  const { toggleTheme, queryResult } = useContext(ThemeChanger);
   const styles = { color: toggleTheme.contentColor };
   const styles2 = { color: toggleTheme.color };
   return (
