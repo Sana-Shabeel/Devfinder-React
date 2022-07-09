@@ -18,7 +18,7 @@ Frontend Mentor challenge: Devfinder
 
 ## links
 
-- Live Site URl:
+- Live Site URl: [Deplpoyed on netlify](https://devfinder-react.netlify.app/)
 
 # My process
 
